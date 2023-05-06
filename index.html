@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = 'style.css'>
+</head>
+<body>
+    <script src = "index.js"></script>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">This is Raymond Kombo's website</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="ocean.mp4" muted loop autoplay></video>
+
+        <div class = "overlay"></div>
+
+        <div class = "text">
+            <h2>Never Stop, always stay motivated and happy</h2>
+            <h3>Exploring The World</h3>
+            <p>
+                I am a young business entreprenuer, coding enthusiast who also is in love with everything tech. Creating content and videos online is just a way of advertising my skills and knowledge level.
+            </p>
+            <a id="Explore" href = "#">Explore</a>
+        </div>
+
+        <ul class ="social">
+            <!-- <li><a href = "#"><img src="" alt=""></li>
+            <li><a href = "#"><img src="github.png" alt=""></li>
+            <li><a href = "#"><img src="" alt=""></li>
+            <li><a href = "#"><img src="instagram.jpeg" alt=""></li> -->
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#" >Destinaton</a></li>
+            <li><a href="#" >Blog</a></li>
+            <li><a href="#" >Contact</a></li>
+        
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        } )
+    </script>
+</body>
+</html>
