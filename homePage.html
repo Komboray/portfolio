@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Snapchat.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="textt">I am a dedicated coding enthusiast who focuses on creating software that will be able to intergrate and solve current world issues. The software that i create is meant to link the local people with the outside world
+                    
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li class="texttt"><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li class="texttt"><span>Languages</span><br>Java, Dart, JavaScript, HTML, CSS</li>
+                                <li class="texttt"><span>Mobile App Development</span><br>Building Android & ios apps with Flutter</li>
+                                <li class="texttt"><span>Web Development</span><br>Designing Web interfaces using Flutter <br>Web development with JavaScript, HTML & CSS</li>
+                                <li class="texttt"><span>Backend development</span><br>I have extensive knowledge  of both relational i.e MySQL and php myAdmin and non-relational i.e MongoDb & Firebase databases.
+                                <br class="texttt">Some of the frameworks that I have extensive knowledge on for this backend development include Laravel. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July, 2021 - 2022</span><br>Intern in I.T Support at Lukenya Getaway</li>
+                                <!-- <li><span>2019 - 2021</span><br>Team Leader</li>
+                                <li><span>2017 - 2023</span><br>Designing Web interfaces</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2023</span><br><h2>Daystar University</h2> <br>Studying for bachelor of B.COM in Management Information Systems</li>
+                                <li><span>2013-2017</span><br><h2>Njiiri School</h2><br>K.C.S.E</li>
+                                <li><span>2016 & below</span><br><h2>Acacia Crest Academy</h2><br>Primary School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->  
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Data entry and maintenance</h2>
+                    <p>I offer great data maintenance capabilities with my knowledge of how various databases operate. Firebase as a cloud storage is actually really quick and effective!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I offer great web and application design graphics that are intergrated to assist in developing user frendly apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Payment and subscription maintenance</h2>
+                    <p>I am vastly knowledgable in Safaricom APIs such as stk push and I also offer skills used to make USSDs from Africa's Talking developer's portals</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->        <!-- portfolio -->         <!-- portfolio -->    
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="hello.jpg" >
+                    <div class="layer">
+                        <h3>E-Commerce App with Safaricom STK push payment</h3>
+                        <p>The app connects local sellers with buyers</p>
+                        <a href="#">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="daraja.jpg" >
+                    <div class="layer">
+                        <h3>Initialization of payment</h3>
+                        <p>The makes it easy for people to pay with lipa na Mpesa</p>
+                        <a href="#">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="book.jpg" >
+                    <div class="layer">
+                        <h3>The booking section of the application</h3>
+                        
+                        <a href="#">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="playGames.html" class="btn">Play a Game</a>
+        </div>
+    </div>
+    <!-- contact    -->     <!-- contact    --> <!-- contact    --> <!-- contact    -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>mbithiraymond@gmail.com</p>
+                    <p>0727238639</p>
+                    <div class="social-icons">
+                        <a href="https://Github/Komboray.com"></a>
+                    </div>
+                    <a href="Documents/CV.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright @ Kombo.co. 
+            </p>
+        </div>
+    </div>
+
+    <script src="links.js"></script>
+</body>
+</html>
