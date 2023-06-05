@@ -1,3 +1,5 @@
+
+const element = document.getElementById("element")
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
 const restartBtn = document.querySelector("#restartBtn");
@@ -25,14 +27,25 @@ function initGame(){
   running = true;
   
 }
+//trying to make the cell that is chosen to change colour with on mouse over
+// cells.onmouseOver = doSomething;
+
+function doSomething(){
+    element.style.backgroundColor = "red";
+}
+// const mouse = function onmouseOver(){
+    
+// }
 
 function cellClicked(){
     const cellIndex =this.getAttribute("cellIndex");
+    element.onmouseOver = doSomething;
 
     if(options[cellIndex] != "" || !running){
         return;
     }
 
+    
     updateCell(this, cellIndex);
     
     checkWinner();
@@ -41,6 +54,7 @@ function cellClicked(){
 function updateCell(cell, index){
   options[index] = currentPlayer;
   cell.textContent = currentPlayer;
+  
 }
 function changePlayer(){
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
@@ -90,8 +104,15 @@ function restartGame(){
     running = true;
 }
 
-setTimeout(firstMessage, 6000);
+
+// this is what is going to make the pop ups
+setTimeout(firstMessage, 30000);
+setTimeout(fasterMessage, 1000000);
 
 function firstMessage(){
-    alert("Please contribute");
+    alert("Now that you know that the game works, try to beat the timer");
+}
+
+function fasterMessage(){
+    alert("LoL! Times up.....play another game");
 }
