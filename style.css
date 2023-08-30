@@ -14,9 +14,9 @@
   .showcase {
     position: absolute;
     right: 0;
-    width: 100%;
+    width: 80%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
