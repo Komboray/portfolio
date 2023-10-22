@@ -453,18 +453,18 @@
   overflow: hidden;
 }
 
-/* .work img{
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-} */
-.work video{
+.work img{
   width: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
 }
+/* .work video{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+} */
 
 .layer{
   width: 100%;
@@ -504,12 +504,12 @@
 
 }
 
-/* .work:hover img{
-  transform: scale(1.1);
-} */
-.work:hover video{
+.work:hover img{
   transform: scale(1.1);
 }
+/* .work:hover video{
+  transform: scale(1.1);
+} */
 
 .work:hover .layer{
   height: 100%;
