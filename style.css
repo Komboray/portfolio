@@ -453,7 +453,13 @@
   overflow: hidden;
 }
 
-.work img{
+/* .work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+} */
+.work video{
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -498,7 +504,10 @@
 
 }
 
-.work:hover img{
+/* .work:hover img{
+  transform: scale(1.1);
+} */
+.work:hover video{
   transform: scale(1.1);
 }
 
