@@ -652,7 +652,7 @@ nav-links{
       .nav-links{
          position: fixed;
          background: #f0f0f3;
-         height: 100vh;
+         height: 50vh;
          width: 200px;
          top: 0;
          /* to hide the menu */
