@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-image">
+        
+    </div>
+    <h1 style="color: red;">INTRODUCTION TO SOCKETS IN PYTHON</h1>
+    <br>
+    <p>
+        Sockets in python language are very important because they habour for different functionalities such as communication between servers and clients.
+
+    </p>
+    <p>
+        Examples of Sockets in python include:
+        <ol>
+            1. UDP Sockets
+            User datagram protocol
+            
+        </ol>
+        <ol>
+            2. TCP Sockets
+            Transmission Control Protocol
+        </ol>
+
+    
+
+    </p>
+     In this case, we are going to be analyzing the TCP Server
+    <ol>
+        TCP Servers require an established connection before transmitting data
+
+    </ol>
+       <ol>
+         Can sequence data (send in a specific order)
+       </ol>
+       <ol>
+        Can retransmit data if packets fail to arrive
+       </ol>
+       <ol>
+        Delivery is guaranteed
+       </ol>
+       <ol>
+        Thorough error-checking guarantees data arrives in its intended state
+       </ol>
+       <ol>
+        Not supported
+       </ol>
+
+       <H2>TCP is best for:
+        <ol>
+            Email or texting
+        </ol>
+        <ol>File transfer</ol>
+        <ol>
+            Web browsing
+        </ol>
+       </H2>
+
+       <h1 style="color: red;">Below is an example of a TCP Connection with the server side</h1>
+    
+       <div class="ease-back">
+        <pre>
+            <code>
+        import socket
+        #will be used to create an effiecient link with the server socket to plug us in
+        
+        #if the client is in the local area network, you just connect to the server ip address
+        #Otherwise we need the ip address the public ip adress if the device is outside the LAN
+        
+        # ip address
+        HOST = "192.168.106.1"
+        PORT = 9098
+        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server.bind((HOST,PORT))
+        server.listen(1)
+        
+        while True:
+            #we accept the message
+            socket_mess,address = server.accept()
+            print(f"You are connected to the following address{address}")
+            message = input("Enter the message to tell the client what to do!")
+            #we want to send the message to the client
+            socket_mess.send(message.encode('utf-8'))
+            #we want to receive what the client is going to say
+            clientMess = socket_mess.recv(1024)
+            print(f"The Client message is:{clientMess.decode('utf-8')}")
+            socket_mess.close()
+        #close the server
+        # server.close()
+        
+            </code>
+           </pre>
+       </div>
+
+       <h1 style="color: red;">This is the client side</h1>
+
+       <div class="ease-back">
+        <pre>
+            <code>
+    
+#this is the client, I receive a meesage from the server and tell it something in return
+#Let's Get it
+
+import socket
+PORT = 9098
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+client.connect(("192.168.106.1", PORT))
+
+messageFomServer = client.recv(1024)
+print(f"Message:{messageFomServer.decode('utf-8')}")
+talkToServer = input("Enter the response to the Server")
+print(talkToServer.encode('utf-8'))
+            </code>
+           </pre>
+       </div>
+
+       <p>
+        With that simple snippet of code, Welcome to the world of server and client comunication
+       </p>
+       
+       
+</body>
+</html>
