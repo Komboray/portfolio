@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry</title>
+  
+</head>
+<body>
+    <div class="cont-im">
+        
+    </div>
+    <H1>Managing ERP SYSTSEMS FROM MICROSOFT DYNAMIC NAV</H1>
+    <p>
+        During my time at NAS, I have been able to engage with simple data entry regiments that involve the use of the advanced systems. One of the advanced systems that I have been able to interact with includes the Dynamic Nav which has the ability to Grow and manage a business's finances.
+
+    </p>
+    <br>
+    <p>
+        I am currently trying to develop a website that has the system but it is built in a simple way to accommodate for less training to small businesses such as shops and agri-businesses.
+    </p>
+    <br>
+    <h1 style="color: red;">Introduction to some of the concepts in business and accounting finance that you need to know</h1>
+    <br>
+    <p>
+        Understanding concepts such as credit and debit accounting is one of the key factors to filling in data obtained from a company.
+        <h2>
+            Some of the asset accounts include:
+        </h2>
+        <h3>Short term assets</h3>
+        <ol>
+            Account receivables, cash, pre-paid expenses, other receivables and intangible assets 
+        </ol>
+        <h3>Long term assets</h3>
+        <ol>Intangible assets, property, plant and equipment assets </ol>
+    </p>
+
+    <h2>
+        Some of the liable accounts include:
+    </h2>
+    <ol>Accounts payable, taxes payable, deferred revenue and long term loans</ol>
+
+    <h2>
+        Some of the equity accounts include:
+    </h2>
+    <br>
+    <ol>Common stock(capital contributions), open retained earnings and dividends </ol>
+    <ol>Interest expense, 
+        tax expense, 
+        revenue , 
+        cost of sales, 
+        general and administrative expenses, 
+        selling and marketing expenses</ol>
+</body>
+</html>
