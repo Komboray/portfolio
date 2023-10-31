@@ -608,6 +608,7 @@ nav img{
 nav-links{
      flex: 1;
      text-align: right;
+     display: contents;
 }
  
  /* this is the css for the menu */
@@ -616,6 +617,8 @@ nav-links{
      display: inline-block;
      padding: 8px 12px;
      position: relative;
+     
+  
 }
  
  /* for the undertag */
