@@ -714,3 +714,33 @@ h1{
     background-size: cover;
     position: relative;
 }
+
+/* the home network page */
+img{
+  padding:20px 20px 20px 20px;
+  width: 1200px;
+  height:400px;
+}
+
+h2{
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+
+}
+
+.text{
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
+
+.center-img{
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center;
+  padding:10px 20px 10px 20px;
+  width: 500px;
+  height:400px;
+
+}
