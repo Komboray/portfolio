@@ -716,7 +716,7 @@ h1{
 }
 
 /* the home network page */
-img{
+.first-img{
   padding:20px 20px 20px 20px;
   width: 1200px;
   height:400px;
