@@ -324,6 +324,7 @@
 .about-col-2{
   flex-basis: 60%;
 }
+/* //////BORROWED THIS PART BELOW USED TO CHANGE THE TILES IN THE HOMEPAGE */
 .subtitle{
   font-size: 60px;
   font-weight: 600;
