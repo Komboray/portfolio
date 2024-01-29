@@ -1,3 +1,4 @@
+//THIS IS THE PART USED IN ALLOWING FOR USEABILITY FOR THE SITE..ALLOWING FOR EASY NAVIGATION
 var tablinks =document.getElementsByClassName("tab-links");
 var tabcontents =document.getElementsByClassName("tab-contents")
 
